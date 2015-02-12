@@ -4,14 +4,51 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rediseño de la web de la ETSIT con Bootstrap</title>
-
+    <title>Magia con Bootstrap</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Carousel extra styles -->
     <link rel="stylesheet" href="css/carousel.css">
   </head>
   <body>
+	  
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://www.urjc.es" target="_blank">URJC</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="http://www.etsit.urjc.es/" target="_blank">ETSIT</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Información<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="http://www.etsit.urjc.es/estudios/index.html" target="_blank" >Estudios y titulaciones</a></li>
+                <li><a href="http://docencia.etsit.urjc.es/moodle/course/view.php?id=109" target="_blank">Portal de Docencia</a></li>
+                <li><a href="http://www.etsit.urjc.es/informacion_general/index.html" target="_blank">Información General</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-right" role="search" action="http://googlemini.urjc.es/search" method='get'>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Texto a buscar" required name="q">
+            </div>
+            <button type="submit" class="btn btn-default">Buscar</button>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>	  
+	  
     <h1>Esto es un ejercicio para hacer una página para la ETSIT URJC con componentes de Boostrap.</h1>
 
     <p>La página web ha de usar al menos:</p>
